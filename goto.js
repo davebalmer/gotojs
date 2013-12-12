@@ -3,7 +3,7 @@
 	======
 
 	A delightfully evil abomination of eval() with goto(); all in global space
-	by @balmer.
+	by Dave Balmer.
 
 	See the README.md for more info.
 */

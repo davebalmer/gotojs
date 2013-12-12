@@ -2,7 +2,7 @@ gotojs
 ======
 
 A delightfully evil abomination of eval() with goto(); all in global space
-by @balmer.
+by Dave Balmer.
 
 Use
 ---
@@ -28,3 +28,8 @@ Commands
 - `tron()` turns the tracer on.
 - `tron()` turns the tracer off.
 - `end()` stop execution of the `program`.
+
+Support
+-------
+
+Tweet @balmer or visit http://blog.davebalmer/com/gotojs
