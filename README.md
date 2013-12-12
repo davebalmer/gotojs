@@ -32,4 +32,4 @@ Commands
 Support
 -------
 
-Tweet @balmer or visit http://blog.davebalmer/com/gotojs
+Tweet @balmer or visit http://blog.davebalmer.com/introducing-gotojs-sequential-programming-for-javascript/
