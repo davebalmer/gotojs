@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>GOTOJS DEMO</title>
+<style>
+	body { font-family: "Monaco", "Courier New" }
+	p { margin: 0; }
+</style>
+</head>
+<body>
+
+<script src="goto.js"></script>
+<script>
+
+/*
+	Put your program here.
+
+	- It's all in global space
+	- Powered by eval()
+	- No semi-colons required
+	- Use any integer you want as a line number
+	- Put them in any order; they'll get sorted out
+	- Don't forget to use goto(line)
+	- Make sure you use end() when you're done
+*/
+
+program = {
+	5: "print('Hello World!')",
+
+	10: "x = 0",
+	20: "x = x + 1",
+	30: "print(x)",
+	40: "if (x < 10) goto(20)",
+	50: "print('Done')",
+	60: "end()",
+
+	100: "print('Bonus code!')",
+	110: "end()"
+};
+
+// run it!
+run();
+
+// run from a different line
+run(100);
+
+</script>
+
+
+</body>
+</html>
