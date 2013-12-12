@@ -1,7 +1,7 @@
 gotojs
 ======
 
-A delightfully evil abomination of eval() and goto(); all in global space
+A delightfully evil abomination of eval() with goto(); all in global space
 by @balmer.
 
 Use
