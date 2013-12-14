@@ -54,6 +54,11 @@ function print(s) {
 	document.body.appendChild(o);
 }
 
+// clear the screen
+function clear() {
+	document.body.innerHTML = "";
+}
+
 debug = 0;
 running = 0;
 
