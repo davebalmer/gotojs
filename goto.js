@@ -50,7 +50,11 @@ function run(l) {
 // dumping things to the DOM; couldn't bring myself to use document.write()
 function print(s) {
 	var o = document.createElement("p");
-	o.innerHTML = s;
+	if (s)
+		o.innerHTML = s;
+	else
+		o.innerHTML = "&nbsp;";
+	
 	document.body.appendChild(o);
 }
 
