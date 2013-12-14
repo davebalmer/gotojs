@@ -63,6 +63,14 @@ function clear() {
 	document.body.innerHTML = "";
 }
 
+// display a button
+function button(text, l) {
+	var b = document.createElement("button");
+	b.innerHTML = text;
+	b.setAttribute("onclick", "goto(" + l + ")");
+	document.body.appendChild(b);
+}
+
 debug = 0;
 running = 0;
 
