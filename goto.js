@@ -29,11 +29,8 @@ function run(l) {
 	// prevent runaway scripts
 	var max = 0;
 
-	line = -1;
-	if (l)
-		goto(l);
-	else
-		line = 0;
+	running = 1;
+	line = l || 0;
 
 	// execution engine, powered by globals and eval()
 	for (; line < linenumber.length; line++) {
@@ -47,6 +44,7 @@ function run(l) {
 		// eval() is eval
 		eval(program[linenumber[line]]);
 	}
+	running = 0;
 }
 
 // dumping things to the DOM; couldn't bring myself to use document.write()
@@ -57,6 +55,7 @@ function print(s) {
 }
 
 debug = 0;
+running = 0;
 
 // turn debugging on
 function tron() {
@@ -72,12 +71,20 @@ function troff() {
 function goto(l) {
 	var test = linenumber.indexOf(l);
 
-	if (test >= 0)
-		line = (line >= 0) ? test - 1 : test;
+	if (!running) {
+		run(test);
+	}
+	else {
+		if (line >= 0)
+			line = test - 1;
+		else
+			line = test
+	}
 }
 
 // stop execution
 function end() {
 	line = linenumber.length;
+	running = 0;
 }
 
