@@ -4,6 +4,14 @@ gotojs
 A delightfully evil abomination of eval() with goto(); all in global space
 by Dave Balmer.
 
+It's a lightweight, low-level library that:
+
+- Introduces proper sequential programming based on line numbers, something sorely missing from JavaScript
+- Reduces complexity by eliminating the need for semicolons
+- Works exclusively in global space; no more var statements for your variables (seriously, don't use them or something may break)
+- Simple, direct control of code execution with goto()
+- Powered by eval()
+
 Use
 ---
 
