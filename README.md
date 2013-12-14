@@ -25,6 +25,9 @@ Commands
 - `run(line)` start execution of the `program` at the beginning or `line`.
 - `goto(line)` move execution to the `line` specified.
 - `print(string)` prints the string to the `document.body`.
+- `button(text, line)` displays a button with text contents, will goto(line)
+  when clicked.
+- `clear()` clear the screen
 - `tron()` turns the tracer on.
 - `tron()` turns the tracer off.
 - `end()` stop execution of the `program`.
