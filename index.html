@@ -40,14 +40,31 @@ program = {
 	5: "print('Hello World!')",
 
 	10: "x = 0",
+	15: "clear()",
 	20: "x = x + 1",
 	30: "print(x)",
 	40: "if (x < 10) goto(20)",
 	50: "print('Done')",
-	60: "end()",
+	60: "goto(200)",
 
 	100: "print('Bonus code!')",
-	110: "end()"
+	110: "end()",
+
+	200: "print()",
+	205: "print('What color do you like?')",
+	210: "button('Red', 300)",
+	220: "button('Blue', 310)",
+	230: "button('Green', 320)",
+	240: "end()",
+
+	300: "document.body.style.color = '#900'",
+	301: "goto(10)",
+
+	310: "document.body.style.color = '#009'",
+	311: "goto(10)",
+
+	320: "document.body.style.color = '#090'",
+	321: "goto(10)"
 };
 
 // run it!
