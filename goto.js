@@ -58,6 +58,12 @@ function print(s) {
 	document.body.appendChild(o);
 }
 
+function print_source() {
+	linenumber.forEach(function(n) {
+		print('' + n + ': ' + program[n]);
+	});
+}
+
 // clear the screen
 function clear() {
 	document.body.innerHTML = "";
