@@ -54,7 +54,7 @@ function print(s) {
 		o.innerHTML = s;
 	else
 		o.innerHTML = "&nbsp;";
-	
+
 	document.body.appendChild(o);
 }
 
@@ -104,4 +104,3 @@ function end() {
 	line = linenumber.length;
 	running = 0;
 }
-
