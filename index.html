@@ -55,7 +55,8 @@ program = {
 	210: "button('Red', 300)",
 	220: "button('Blue', 310)",
 	230: "button('Green', 320)",
-	240: "end()",
+	240: "button('Source', 400)",
+	250: "end()",
 
 	300: "document.body.style.color = '#900'",
 	301: "goto(10)",
@@ -64,7 +65,10 @@ program = {
 	311: "goto(10)",
 
 	320: "document.body.style.color = '#090'",
-	321: "goto(10)"
+	321: "goto(10)",
+
+	400: "print_source()",
+	410: "end()"
 };
 
 // run it!

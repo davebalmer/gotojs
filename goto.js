@@ -54,8 +54,14 @@ function print(s) {
 		o.innerHTML = s;
 	else
 		o.innerHTML = "&nbsp;";
-	
+
 	document.body.appendChild(o);
+}
+
+function print_source() {
+	linenumber.forEach(function(n) {
+		print('' + n + ': ' + program[n]);
+	});
 }
 
 // clear the screen
@@ -104,4 +110,3 @@ function end() {
 	line = linenumber.length;
 	running = 0;
 }
-
